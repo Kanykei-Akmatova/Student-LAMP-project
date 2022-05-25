@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+#myInput {
+  background-image: url("searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: 5px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: inline-block;
+  vertical-align: top;
+  width: 10%;
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+#myTime {
+  float: right;
+  background: white;
+  color: red;
+  font-weight: bold;
+  width: 10%;
+  height: 28px;
+}
+
+table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+tr {
+  background-color: fff;
+}
+tr:first-child {
+  background-color: #555;
+  color: #fff;
+}
+th,
+td {
+  padding: 10px;
+  border: 1px solid #666;
+}

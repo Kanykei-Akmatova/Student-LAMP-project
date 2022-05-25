@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="./flag-icons/flag-icons.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8"> 
+    <title>Contact</title>
+  </head>
+  <body>
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Products
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="currency.php">Currency exchange</a>
+            <a href="">Service 2</a>
+          </div>
+        </div>
+        <div class="dropdown active">
+          <button class="dropbtn" onclick="location.href='contact.html';">
+            Contact Us
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href=""><i class="fi fi-fr"></i>Contactez-nous</a>
+            <a href=""><i class="fi fi-gb"></i>Contact us</a>
+            <a href=""><i class="fi fi-kg"></i>Байланыштар</a>
+          </div>
+        </div>
+        <a href="aboutme.html"><i class="fa fa-fw fa-user"></i> About</a>
+      </div>
+
+    <div id="top">
+      <h1>Contact Us</h1>
+      <p>
+        Please complete the information below. Fields marked with
+        <span class="required"> </span> are required fields.
+      </p>
+    </div>
+    <div id="data">
+      <form action="ADD_ACTION" method="post">
+        <fieldset>
+          <legend>Your Data</legend>
+          <table>
+            <tr>
+              <td style="text-align: center">
+                <span class="required">First Name</span>
+              </td>
+              <td><input type="text" id="first_name" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <span class="required">Last Name</span>
+              </td>
+              <td><input type="text" id="last_name" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <span class="required">Street Address</span>
+              </td>
+              <td><input type="text" id="street_address" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <span class="required">City</span>
+              </td>
+              <td><input type="text" id="city" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <span class="required">Province</span>
+              </td>
+              <td>
+                <select name="province" id="province">
+                  <option value="NONE">Select and option</option>
+                  <option value="AB">AB</option>
+                  <option value="BC">BC</option>
+                  <option value="MB">MB</option>
+                  <option value="NB">NB</option>
+                  <option value="NL">NL</option>
+                  <option value="NS">NS</option>
+                  <option value="NT">NT</option>
+                  <option value="NU">NU</option>
+                  <option value="ON">ON</option>
+                  <option value="PEI">PEI</option>
+                  <option value="QC">QC</option>
+                  <option value="SK">SK</option>
+                  <option value="YT">YT</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <span class="required">Postal Code</span>
+              </td>
+              <td><input type="text" id="postal_code" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <span class="required">Email Address</span>
+              </td>
+              <td><input type="email" id="email" /></td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <span class="required">Phone Number</span>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  maxlength="10"
+                  pattern="\d{10}"
+                  title="Please enter exactly 10 digits"
+                  id="phone_number*"
+                />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Agreement</legend>
+          <div>
+            <input
+              type="checkbox"
+              id="accept_agreement"
+              name="accept"
+              value="agreement"
+            />
+            <label for="accept_agreement">Accept Agreement</label>
+          </div>
+          <div>
+            <input type="reset" />
+            <input type="submit" />
+          </div>
+        </fieldset>
+      </form>      
+    </div>
+  </body>
+</html>

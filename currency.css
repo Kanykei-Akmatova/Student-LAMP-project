@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+input[type="button"],
+input[type="submit"] {
+  background-color: darkseagreen;
+}
+
+.alnright {
+  text-align: left;
+}
+
+tr.spaceUnder > td {
+  padding-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+fieldset {
+  overflow: hidden;
+}
+
+.some-class {
+  float: left;
+  clear: none;
+}
